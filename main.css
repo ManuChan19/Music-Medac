@@ -1,0 +1,42 @@
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+        position: fixed;
+        top: 0vh;
+        width: 100vw;
+        height: 10vh;
+        box-sizing: border-box;
+    background-color: #393E46;
+}
+.header nav{
+
+   position: absolute;
+   top: 0;
+    right: 20px;
+    height: 100%;
+    width: auto;
+}
+.navButton{
+    position: initial;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: 12%;
+    background-color: #EEEEEE ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #222831;
+    font-size: 2vh;
+    font-style:normal;
+    height: 50%;
+    width: auto;
+}
+
+Header h1 a img {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
