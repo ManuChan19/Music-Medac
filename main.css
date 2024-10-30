@@ -40,3 +40,32 @@ Header h1 a img {
     height: 100%;
     width: auto;
 }
+main{
+    
+}
+main section{
+    min-height: 100vh;
+    margin-top: 10vh;
+    background-color: lightpink;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+   
+}
+
+#ofertas div:first-child{
+    background-color: bisque;
+grid-column: span 2;
+}
+#ofertas div:nth-child(4){
+    background-color: bisque;
+grid-column: span 2;
+}
+
+
+main section div{
+    background-color: aquamarine;
+
+
+}
