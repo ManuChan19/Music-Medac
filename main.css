@@ -1,34 +1,36 @@
-body{
+body {
     background-color: #222831;
     margin: 0;
 }
 
-.header{
-        position: fixed;
-        top: 0vh;
-        width: 100vw;
-        height: 10vh;
-        box-sizing: border-box;
+.header {
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    height: 10vh;
+    box-sizing: border-box;
     background-color: #393E46;
 }
-.header nav{
 
-   position: absolute;
-   top: 0;
+.header nav {
+
+    position: absolute;
+    top: 0;
     right: 20px;
     height: 100%;
     width: auto;
 }
-.navButton{
+
+.navButton {
     position: initial;
     margin: 2vh;
     padding: 1vh;
     border-radius: 12%;
-    background-color: #EEEEEE ;
+    background-color: #EEEEEE;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:  #222831;
+    color: #222831;
     font-size: 2vh;
-    font-style:normal;
+    font-style: normal;
     height: 50%;
     width: auto;
 }
@@ -40,32 +42,58 @@ Header h1 a img {
     height: 100%;
     width: auto;
 }
-main{
-    
-}
-main section{
+
+main section {
     min-height: 100vh;
     margin-top: 10vh;
-    background-color: lightpink;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
    
+
+}
+main > :first-child{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49vw, 1fr));
 }
 
-#ofertas div:first-child{
-    background-color: bisque;
-grid-column: span 2;
+.exitos{
+display: grid;
+grid-template-columns: repeat(2, 230px);
+justify-content: center;
 }
-#ofertas div:nth-child(4){
-    background-color: bisque;
-grid-column: span 2;
+
+@media (width > 1000px) {
+    .exitos{
+        grid-template-columns: repeat(4, 230px);
+    }
 }
 
 
-main section div{
+
+
+
+
+.exitos div{
+    width: 230px;
+    height: 230px;
+}   
+
+.ofertas div:first-child {
+   
+    grid-column: span 2;
+}
+
+.ofertas div:nth-child(4) {
+   
+    grid-column: span 2;
+}
+
+
+main section div {
     background-color: aquamarine;
+    border-radius: 10px;
 
 
 }
