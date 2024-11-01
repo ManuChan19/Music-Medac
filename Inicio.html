@@ -36,19 +36,38 @@
         </div>
         <div>
             <section class="exitos">
-                <div><button onclick="playtrack('./music/BLACKPINK_SOHOT.mp3')"><img src="./img/BP_SOHOT.jpeg" alt="SO_HOT" title="BP_SOHOT" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BLACKPINK_THEGIRLS.mp3')"><img src="./img/BP_THEGIRLS.jpg" alt="THE_GIRLS" title="BP_THEGIRLS" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BTS_DYNAMITE.mp3')"><img src="./img/BTS_DYNAMITE.png" alt="DYNAMITE" title="BTS_DYNAMITE" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BTS_BOYWITHLUV.mp3')"><img src="./img/BTS_BOYWITHLUV.png" alt="BOY_WITH_LUV" title="BTS_BOYWITHLUV" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BTS_BUTTER.mp3')"><img src="./img/BTS_BUTTER.jpg" alt="BUTTER" title="BTS_BUTTER" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BLACKPINK_BOOMBAYAH.mp3')"><img src="./img/BP_BOOMBAYAH.jpg" alt="BOOMBAYAH" title="BP_BOOMBAYAH" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BLACKPINK_KISSANDMAKEUP.mp3')"><img src="./img/BP_KISSANDMAKEUP.jpg" alt="KISS_AND_MAKE_UP" title="BP_KISSANDMAKEUP" class="topsongs"></button></div>
-                <div><button onclick="playtrack('./music/BTS_WINGS.mp3')"><img src="./img/BTS_WINGS.jpg" alt="WINGS" title="BTS_WINGS" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BLACKPINK_SOHOT.mp3')"><img src="./img/BP_SOHOT.jpeg"
+                            alt="SO_HOT" title="BP_SOHOT" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BLACKPINK_THEGIRLS.mp3')"><img src="./img/BP_THEGIRLS.jpg"
+                            alt="THE_GIRLS" title="BP_THEGIRLS" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BTS_DYNAMITE.mp3')"><img src="./img/BTS_DYNAMITE.png"
+                            alt="DYNAMITE" title="BTS_DYNAMITE" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BTS_BOYWITHLUV.mp3')"><img src="./img/BTS_BOYWITHLUV.png"
+                            alt="BOY_WITH_LUV" title="BTS_BOYWITHLUV" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BTS_BUTTER.mp3')"><img src="./img/BTS_BUTTER.jpg" alt="BUTTER"
+                            title="BTS_BUTTER" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BLACKPINK_BOOMBAYAH.mp3')"><img src="./img/BP_BOOMBAYAH.jpg"
+                            alt="BOOMBAYAH" title="BP_BOOMBAYAH" class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BLACKPINK_KISSANDMAKEUP.mp3')"><img
+                            src="./img/BP_KISSANDMAKEUP.jpg" alt="KISS_AND_MAKE_UP" title="BP_KISSANDMAKEUP"
+                            class="topsongs"></button></div>
+                <div><button onclick="playtrack('./music/BTS_WINGS.mp3')"><img src="./img/BTS_WINGS.jpg" alt="WINGS"
+                            title="BTS_WINGS" class="topsongs"></button></div>
             </section>
         </div>
-        <audio controls id="audioPlayer">
-            <source src="./music/BLACKPINK_SOHOT.mp3">
-        </audio>
+        <div id="reproductor">
+            <audio  id="audioPlayer">
+                <source src="">
+            </audio>
+            
+                <div><button onclick="audioPlay()"><img src="./img/Botones/play_button.png" alt="play_button"
+                            title="play_button" class="audioPlayer"></button></div>
+                <div><button onclick="audioPause()"><img src="./img/Botones/pause_button.png" alt="pause_button"
+                            title="pause_button" class="audioPlayer"></button></div>
+                <div><button onclick="audioStop()"><img src="./img/Botones/stop_button.png" alt="stop_button"
+                            title="stop_button" class="audioPlayer"></button></div>
+
+        </div>
 
     </main>
     <footer>
