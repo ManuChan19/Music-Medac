@@ -59,17 +59,18 @@ main div section {
     padding: 20px;
 }
 
-.introweb{
-   display: flex;
+.introweb {
+    display: flex;
     margin-top: 10vh;
     justify-content: center;
 
-  
-    
+
+
 
 }
-.introweb img{
-    width: 90%; 
+
+.introweb img {
+    width: 90%;
 }
 
 
@@ -85,8 +86,8 @@ main> :nth-child(2) {
     align-items: center;
 }
 
-.ofertas div:nth-child(3){
-position: relative;
+.ofertas div:nth-child(3) {
+    position: relative;
 }
 
 .ofertas div:first-child {
@@ -125,20 +126,20 @@ position: relative;
 
 }
 
-.pulsepromo::after{
+.pulsepromo::after {
     content: "";
     background-color: #393E46;
     width: 230px;
     height: 230px;
     border-radius: 10px;
     z-index: -1;
-   position: absolute;
-   top: 0;
+    position: absolute;
+    top: 0;
     animation-name: pulse;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-  
+
 }
 
 .exitos {
@@ -152,9 +153,10 @@ position: relative;
     .exitos {
         grid-template-columns: repeat(4, 230px);
     }
+
     .introweb img {
-        width: 55vw; 
-        }
+        width: 55vw;
+    }
 }
 
 .exitos div button {
@@ -162,7 +164,7 @@ position: relative;
     padding: 0;
     width: 228px;
     height: 228px;
-    background-color:  #222831;
+    background-color: #222831;
     border-radius: 10px;
 }
 
@@ -173,21 +175,21 @@ position: relative;
 }
 
 
-#reproductor{
+#reproductor {
     margin-bottom: 10vh;
     display: grid;
     grid-template-columns: 60px 60px 60px;
     justify-content: center;
 }
 
-#reproductor div{
+#reproductor div {
 
     height: 50px;
     width: 50px;
     border-radius: 10px;
 }
 
-#reproductor div button{
+#reproductor div button {
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -196,12 +198,84 @@ position: relative;
 
 }
 
-#reproductor div img{
+#reproductor div img {
     height: 50px;
     width: 50px;
     border-radius: 10px;
 }
 
+/*CSS especifico para la pagina de compra de discos*/
+
+.maininfo {
+    margin-top: 10vh;
+    font-size: x-large;
+    color: #EEEEEE;
+    margin-left: 5vh;
+    margin-right: 5vh;
+
+}
+
+.infodisc {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: max-content;
+    text-align: center;
+}
+
+.infosongs {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: justify;
+    row-gap: 10px;
+}
+
+.infosongs div {
+   
+    background-color: #393E46;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+@media (width > 1700px) {
+    .infodisc {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(800, 1fr));
+        justify-items: center;
+        grid-template-rows: max-content;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        font-size: xx-large;
+    }
+
+    .infodisc h3 {
+        grid-column: span 2;
+
+        text-align: center;
+    }
+
+    .infodisc p {
+        margin-left: 10vh;
+        padding: 15vh;
+        margin-top: -10vh;
+
+    }
+
+    .infodisc h4 {
+        grid-row: 3;
+        margin-top: -10vh;
+
+    }
+
+
+
+}
+
+.albumscover {
+    width: 60vh;
+    border-radius: 10px;
+}
 
 @keyframes vanish {
 
@@ -213,15 +287,17 @@ position: relative;
     }
 }
 
-@keyframes pulse{
+@keyframes pulse {
     0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         scale: 1.1;
         opacity: .4;
     }
-    100%{
+
+    100% {
         opacity: .6;
     }
 
