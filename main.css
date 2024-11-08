@@ -204,7 +204,7 @@ main> :nth-child(2) {
     border-radius: 10px;
 }
 
-/*CSS especifico para la pagina de compra de discos*/
+/*CSS especifico para la pagina de compra e info de discos*/
 
 .maininfo {
     margin-top: 10vh;
@@ -223,20 +223,46 @@ main> :nth-child(2) {
     text-align: center;
 }
 
-.infosongs {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    text-align: justify;
-    row-gap: 10px;
+.infosongs section {
+    grid-template-columns: 1fr;
 }
 
-.infosongs div {
-   
+
+.infosongs section div {
+
     background-color: #393E46;
     border-radius: 10px;
     padding: 10px;
 }
 
+
+
+.comprar section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-right: 400px;
+}
+
+.buynow img {
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.buynow::after {
+    content: "";
+    background-color: #393E46;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
 
 @media (width > 1700px) {
     .infodisc {
@@ -256,6 +282,7 @@ main> :nth-child(2) {
     }
 
     .infodisc p {
+        display: block;
         margin-left: 10vh;
         padding: 15vh;
         margin-top: -10vh;
@@ -265,11 +292,24 @@ main> :nth-child(2) {
     .infodisc h4 {
         grid-row: 3;
         margin-top: -10vh;
+        margin-left: 10vh;
 
     }
 
+    .infosongs section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .infosongs section h3 {
+        grid-column: span 3;
+    }
 
+    .comprar section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        margin-right: 400px;
+    }
 }
 
 .albumscover {
