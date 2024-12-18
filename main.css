@@ -1,53 +1,87 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #222831;
     margin: 0;
+
 }
 
 .header {
+    display: flex;
     position: fixed;
+    justify-content: center;
+    align-content: center;
     top: 0vh;
     width: 100vw;
     height: 10vh;
     box-sizing: border-box;
     background-color: #393E46;
-    animation: vanish linear both;
-    animation-timeline: scroll(root block);
-    animation-range: 0% 25%;
-}
+    z-index: 2;
 
-.header:hover {
-    animation: none;
 }
 
 .header nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-    position: absolute;
-    top: 0;
-    right: 20px;
-    height: 100%;
-    width: auto;
+nav a {
+    text-decoration: none;
+    height: fit-content;
 }
 
 .navButton {
-    position: initial;
     margin: 2vh;
     padding: 1vh;
-    border-radius: 12%;
-    background-color: #EEEEEE;
+    border-radius: 6%;
+    background-color: #393E46;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222831;
+    color: #EEEEEE;
     font-size: 2vh;
     font-style: normal;
     height: 50%;
     width: auto;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#navButton1 {
+    animation: indice linear;
+    animation-timeline: view();
+    animation-range: 0vh 190vh;
+}
+
+#navButton2 {
+    animation: indice linear;
+    animation-timeline: view();
+    animation-range: 190vh 370vh;
+}
+
+#navButton3 {
+    animation: indice linear;
+    animation-timeline: view();
+    animation-range: 370vh 500vh;
+}
+
+.navButton:hover {
+    background-color: #2c3038;
+    color: #00ADB5;
 }
 
 Header h1 a img {
     border-radius: 50%;
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
     width: auto;
+}
+
+main {
+    margin-top: 20vh;
 }
 
 main div section {
@@ -60,30 +94,33 @@ main div section {
 }
 
 .introweb {
-    display: flex;
-    margin-top: 10vh;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49vw, 1fr));
+    grid-template-rows: 600px;
+    justify-items: center;
+}
 
-
-
-
+.introweb div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    color: #EEEEEE;
+    margin-left: 5vw;
+    margin-right: 20px;
 }
 
 .introweb img {
-    width: 90%;
+    height: 100%;
+    max-width: fit-content;
 }
-
 
 main> :nth-child(2) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(49vw, 1fr));
-
 }
 
 .ofertas div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .ofertas div:nth-child(3) {
@@ -121,14 +158,12 @@ main> :nth-child(2) {
     display: block;
     width: 230px;
     height: 230px;
-    border-radius: 10px;
-
-
+    border-radius: 50%;
 }
 
 .pulsepromo::after {
     content: "";
-    background-color: #393E46;
+    background-color: #00ADB5;
     width: 230px;
     height: 230px;
     border-radius: 10px;
@@ -139,7 +174,6 @@ main> :nth-child(2) {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-
 }
 
 .exitos {
@@ -150,6 +184,7 @@ main> :nth-child(2) {
 }
 
 @media (width > 1000px) {
+
     .exitos {
         grid-template-columns: repeat(4, 230px);
     }
@@ -159,16 +194,10 @@ main> :nth-child(2) {
     }
 }
 
-.exitos div button {
-    cursor: pointer;
-    padding: 0;
-    width: 228px;
-    height: 228px;
-    background-color: #222831;
-    border-radius: 10px;
-}
+
 
 .topsongs {
+    cursor: pointer;
     width: 230px;
     height: 230px;
     border-radius: 10px;
@@ -180,13 +209,6 @@ main> :nth-child(2) {
     display: grid;
     grid-template-columns: 60px 60px 60px;
     justify-content: center;
-}
-
-#reproductor div {
-
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
 }
 
 #reproductor div button {
@@ -265,6 +287,24 @@ main> :nth-child(2) {
 }
 
 @media (width > 1700px) {
+    #navButton1 {
+        animation: indice linear;
+        animation-timeline: view();
+        animation-range: 0vh 129vh;
+    }
+
+    #navButton2 {
+        animation: indice linear;
+        animation-timeline: view();
+        animation-range: 130vh 209vh;
+    }
+
+    #navButton3 {
+        animation: indice linear;
+        animation-timeline: view();
+        animation-range: 210vh 300vh;
+    }
+
     .infodisc {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(800, 1fr));
@@ -329,16 +369,28 @@ main> :nth-child(2) {
 
 @keyframes pulse {
     0% {
-        opacity: 0;
+
+        opacity: 1;
     }
 
     50% {
         scale: 1.1;
-        opacity: .4;
+        opacity: 1;
+        border-radius: 50%;
     }
 
     100% {
-        opacity: .6;
+        rotate:90deg;
+        opacity: 1;
     }
 
+}
+
+@keyframes indice {
+
+    0%,
+    100% {
+        color: #00ADB5;
+        background-color: #2c3038;
+    }
 }

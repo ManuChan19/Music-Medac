@@ -15,57 +15,76 @@
         <h1><a><img src="./img/LogoNegro.jpg" alt="Logo M&M" title="Logo" id="LogoM&M" class="Logo" width="50px"
                     height="50px"></a></h1>
         <nav>
-            <button class="navButton">Login</button>
-            <button class="navButton">Sing in</button>
+            <a href="#">
+                <p class="navButton" id="navButton1">Inicio</p>
+            </a>
+            <a href="Inicio.html#ofertas">
+                <p class="navButton" id="navButton2">Ofertas</p>
+            </a>
+            <a href="Inicio.html#albumsintro">
+                <p class="navButton" id="navButton3">Grandes Exitos</p>
+            </a>
         </nav>
 
     </header>
     <main>
-        <div class="introweb"> <img src="./img/IntroM&M.png" alt="Intro M&M" title="intro_M&M"></div>
+        <div class="introweb" id="introweb">
+            <div><p>Bienvenidos a Music&Medac donde encontrarás una oferta especial en álbumes de artistas
+                destacados, brindando a los aficionados la oportunidad de ampliar su colección personal a precios atractivos.
+                <br><br> Además, Music&Medac permite a los usuarios disfrutar de una sección de grandes éxitos de nuestros
+                artistas destacados, permitiendo disfrutar de las canciones más populares.
+            </p></div>
+             <img src="./img/Logo.png" alt="Intro M&M"></div>
         <div class="albumsintro">
-            <section class="ofertas">
-                <div><a href="BTSpage.html#infodisc"  target="_blank"><img src="./img/BTS_COVER.jpg" alt=BTS_DYNAMITE title=promocover1 class="coverpromo" ></a></div>
-                <div><a href="BTSpage.html#infosongs"><img src="./img/BTS_BACKCOVER.jpg" alt=BTS_BACK title=promobackcover1 class="backcoverpromo"></a></div>
-                <div><a href="BTSpage.html#comprar" class="pulsepromo"><img src="./img/SaleButton.png" alt=boton_compra title=promocompra1 class="comprapromo"></a></div>
+            <section class="ofertas" id="ofertas">
+                <div><a href="BTSpage.html#infodisc"><img src="./img/BTS_COVER.jpg" alt=BTS_DYNAMITE title=promocover1
+                            class="coverpromo"></a></div>
+                <div><a href="BTSpage.html#infosongs"><img src="./img/BTS_BACKCOVER.jpg" alt=BTS_BACK
+                            title=promobackcover1 class="backcoverpromo"></a></div>
+                <div><a href="BTSpage.html#comprar" class="pulsepromo"><img src="./img/SaleButton.png" alt=boton_compra
+                            title=promocompra1 class="comprapromo"></a></div>
             </section>
             <section class="ofertas">
-                <div><img src="./img/BP_COVER.jpg" alt=BP_INYOURAREA title=promocover2 class="coverpromo"></div>
-                <div><img src="./img/BP_BACKCOVER.jpg" alt=BP_BACK title=promobackcover2 class="backcoverpromo"></div>
-                <div><a class="pulsepromo"><img src="./img/SaleButton.png" alt=boton_compra title=promocompra2 class="comprapromo"></a></div>
+                <div><a href="BPpage.html#infodisc"><img src="./img/BP_COVER.jpg" alt=BP_INYOURAREA
+                        title="promocover2" class="coverpromo"></a></div>
+                <div><a href="BPpage.html#infosongs"><img src="./img/BP_BACKCOVER.jpg" alt=BP_BACK
+                        title="promobackcover2" class="backcoverpromo"></a></div>
+                <div><a href="BPpage.html#comprar" class="pulsepromo"><img src="./img/SaleButton.png" alt=boton_compra
+                            title=promocompra2 class="comprapromo"></a></div>
 
             </section>
         </div>
-        <div class="albumsintro">
+        <div class="albumsintro" id="albumsintro">
             <section class="exitos">
-                <div><img src="./img/BP_SOHOT.jpeg"
-                            alt="SO_HOT" title="BP_SOHOT" class="topsongs" onclick="playtrack('./music/BLACKPINK_SOHOT.mp3')"></div>
-                <div><img src="./img/BP_THEGIRLS.jpg"
-                            alt="THE_GIRLS" title="BP_THEGIRLS" class="topsongs" onclick="playtrack('./music/BLACKPINK_THEGIRLS.mp3')"></div>
-                <div><img src="./img/BTS_DYNAMITE.png"
-                            alt="DYNAMITE" title="BTS_DYNAMITE" class="topsongs" onclick="playtrack('./music/BTS_DYNAMITE.mp3')"></div>
-                <div><img src="./img/BTS_BOYWITHLUV.png"
-                            alt="BOY_WITH_LUV" title="BTS_BOYWITHLUV" class="topsongs" onclick="playtrack('./music/BTS_BOYWITHLUV.mp3')"></div>
-                <div><img src="./img/BTS_BUTTER.jpg" alt="BUTTER"
-                            title="BTS_BUTTER" class="topsongs" onclick="playtrack('./music/BTS_BUTTER.mp3')"></div>
-                <div><img src="./img/BP_BOOMBAYAH.jpg"
-                            alt="BOOMBAYAH" title="BP_BOOMBAYAH" class="topsongs" onclick="playtrack('./music/BLACKPINK_BOOMBAYAH.mp3')"></div>
+                <div><img src="./img/BP_SOHOT.jpeg" alt="SO_HOT" title="BP_SOHOT" class="topsongs"
+                        onclick="playtrack('./music/BLACKPINK_SOHOT.mp3')"></div>
+                <div><img src="./img/BP_THEGIRLS.jpg" alt="THE_GIRLS" title="BP_THEGIRLS" class="topsongs"
+                        onclick="playtrack('./music/BLACKPINK_THEGIRLS.mp3')"></div>
+                <div><img src="./img/BTS_DYNAMITE.png" alt="DYNAMITE" title="BTS_DYNAMITE" class="topsongs"
+                        onclick="playtrack('./music/BTS_DYNAMITE.mp3')"></div>
+                <div><img src="./img/BTS_BOYWITHLUV.png" alt="BOY_WITH_LUV" title="BTS_BOYWITHLUV" class="topsongs"
+                        onclick="playtrack('./music/BTS_BOYWITHLUV.mp3')"></div>
+                <div><img src="./img/BTS_BUTTER.jpg" alt="BUTTER" title="BTS_BUTTER" class="topsongs"
+                        onclick="playtrack('./music/BTS_BUTTER.mp3')"></div>
+                <div><img src="./img/BP_BOOMBAYAH.jpg" alt="BOOMBAYAH" title="BP_BOOMBAYAH" class="topsongs"
+                        onclick="playtrack('./music/BLACKPINK_BOOMBAYAH.mp3')"></div>
                 <div><img src="./img/BP_KISSANDMAKEUP.jpg" alt="KISS_AND_MAKE_UP" title="BP_KISSANDMAKEUP"
-                            class="topsongs" onclick="playtrack('./music/BLACKPINK_KISSANDMAKEUP.mp3')"></div>
-                <div><img src="./img/BTS_WINGS.jpg" alt="WINGS"
-                            title="BTS_WINGS" class="topsongs" onclick="playtrack('./music/BTS_WINGS.mp3')"></div>
+                        class="topsongs" onclick="playtrack('./music/BLACKPINK_KISSANDMAKEUP.mp3')"></div>
+                <div><img src="./img/BTS_WINGS.jpg" alt="WINGS" title="BTS_WINGS" class="topsongs"
+                        onclick="playtrack('./music/BTS_WINGS.mp3')"></div>
             </section>
         </div>
         <div id="reproductor">
-            <audio  id="audioPlayer">
+            <audio id="audioPlayer">
                 <source src="">
             </audio>
-            
-                <div><button onclick="audioPlay()"><img src="./img/Botones/play_button.png" alt="play_button"
-                            title="play_button" class="audioPlayer"></button></div>
-                <div><button onclick="audioPause()"><img src="./img/Botones/pause_button.png" alt="pause_button"
-                            title="pause_button" class="audioPlayer"></button></div>
-                <div><button onclick="audioStop()"><img src="./img/Botones/stop_button.png" alt="stop_button"
-                            title="stop_button" class="audioPlayer"></button></div>
+
+            <div><button onclick="audioPlay()"><img src="./img/Botones/play_button.png" alt="play_button"
+                        title="play_button" class="audioPlayer"></button></div>
+            <div><button onclick="audioPause()"><img src="./img/Botones/pause_button.png" alt="pause_button"
+                        title="pause_button" class="audioPlayer"></button></div>
+            <div><button onclick="audioStop()"><img src="./img/Botones/stop_button.png" alt="stop_button"
+                        title="stop_button" class="audioPlayer"></button></div>
 
         </div>
 
